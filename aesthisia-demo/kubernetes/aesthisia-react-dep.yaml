@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aesthisia-react-dep
+spec:
+  selector:
+    matchLabels:
+      app: aesthisia
+  replicas: 1
+  template:
+    metadata:
+      labels: aesthisia
+    spec:
+      containers:
+        name: aesthisia-react-app
+        image: abhaybajeta/aesthisia:1.2.0
