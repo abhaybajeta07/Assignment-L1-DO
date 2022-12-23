@@ -9,8 +9,11 @@ spec:
   replicas: 1
   template:
     metadata:
-      labels: aesthisia
+      labels: 
+        app: aesthisia
     spec:
       containers:
         name: aesthisia-react-app
-        image: abhaybajeta/aesthisia:1.2.0
+        image: abhaybajeta/aesthisia-react:1.2.0
+        ports: 
+        - containerPort: 3000
