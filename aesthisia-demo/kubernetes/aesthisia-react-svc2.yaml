@@ -4,10 +4,10 @@ metadata:
   name: aesthisa-react-svc
   namespace: aesthisia-react
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: aesthisia
   ports:
     - name: my-app
       port: 80
-      targetPort: 3000
+      targetPort: 300
