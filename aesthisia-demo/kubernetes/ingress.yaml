@@ -1,12 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: aethisia-ingress
+  name: aesthisia-ingress
   namespace: aesthisia-react
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/rewrite-target: nginx
 spec:
-  ingressClassName: nginx
   rules:
     - host: react.aesthisia.in
     - http:
