@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: aesthisia.mydevopslearn.xyz
+    - host: react.aesthisia.in
     - http:
         paths:
           - path: /
