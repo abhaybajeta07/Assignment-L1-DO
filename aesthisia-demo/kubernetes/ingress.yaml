@@ -6,6 +6,7 @@ metadata:
   annotations:
     kubernetes.io/rewrite-target: nginx
 spec:
+  IngressClassName: nginx
   rules:
     - host: aesthisia.mydevopslearn.xyz
     - http:
