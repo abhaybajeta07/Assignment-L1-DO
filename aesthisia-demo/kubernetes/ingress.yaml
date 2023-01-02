@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: aesthisia-ingress
-  namespace: aesthisia-react
+  namespace: aesthisia
   annotations:
     kubernetes.io/rewrite-target: nginx
 spec:
