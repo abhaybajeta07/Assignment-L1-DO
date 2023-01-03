@@ -11,7 +11,7 @@ spec:
   tls:
     - hosts:
         - react.aesthisia.in
-        secretName: aesthisia-ingress-tls
+      secretName: aesthisia-ingress-tls
   rules:
     - host: react.aesthisia.in
     - http:
