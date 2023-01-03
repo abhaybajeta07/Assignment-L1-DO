@@ -9,17 +9,17 @@ metadata:
 spec:
   ingressClassName: nginx
   tls:
-    - hosts:
-        - react.aesthisia.in
-      secretName: aesthisia-ingress-tls
+  - hosts:
+    - react.aesthisia.in
+    secretName: aesthisia-ingress-tls
   rules:
-    - host: react.aesthisia.in
-    - http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: aesthisia-svc
-                port:
-                  number: 80
+  - host: react.aesthisia.in
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: aesthisa-svc
+            port:
+              number: 80
